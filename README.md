@@ -1,3 +1,6 @@
-# Mathelernzettel
+# A statistics calculator
 
-Wenn ich das alles weiss werde ich se schon rocken ;-)
+Desired funcitionality includes:
+1. Mean value
+2. Various standard derivations
+3. Error of mean value
