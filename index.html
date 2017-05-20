@@ -1,0 +1,53 @@
+<!DOCTYPE HTML5 PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>BasicStatistics</title>
+
+        <!-- MathJax -->
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <!-- Jquery -->
+        <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+        <!-- Tether -->
+        <script src="libs/tether/js/tether.min.js"></script>
+        <link rel="stylesheet" href="libs/tether/css/tether.min.css" />
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+        <script src="libs/bootstrap/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!-- Sweet Alert 2 -->
+        <script src="libs/sweetAlert/sweetAlert.min.js"></script>
+        <link rel="stylesheet" href="libs/sweetAlert/sweetAlert.min.css" />
+        <!-- Font Awesome -->
+        <script src="libs/fontAwesome/fontAwesome.js"></script>
+        <!-- Sticky Headers -->
+        <script src="libs/stickyHeaders/stickyHeaders.min.js"></script>
+        <!-- Datepicker -->
+        <link  href="libs/datepicker/datepicker.css" rel="stylesheet">
+        <script src="libs/datepicker/datepicker.js"></script>
+        <!-- Switchery -->
+        <script src="libs/switchery/switchery.min.js"></script>
+        <link rel="stylesheet" href="libs/switchery/switchery.min.css" />
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+      </head>
+    <body>
+      <h1 style="text-align: center; text-decoration: underline; color: #ffaf00">Statistics</h1>
+      <h3 style="margin-left: 0.5em">Enter your data below:</h3>
+      <ul id="data-input">
+        <li style="display:inline">
+          <input type="text" class="data_handler" id="_1" style="display: inline" />
+        </li>
+      </ul>
+      <div class="menu">
+        <button type="button" style="margin-left: 17px" class="btn btn-outline-success btn-lg" id="calc">Calculate</button>
+        <button type="button" class="btn btn-danger btn-sm">Delete All</button>
+      </div>
+      <div class="results" id="results">
+        <span id="meanValue">Mean Value: NaN</span>
+      </div>
+
+
+    </body>
+</html>

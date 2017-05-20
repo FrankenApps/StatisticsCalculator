@@ -1,0 +1,13 @@
+# Eclipse project files
+.classpath
+.project
+.settings
+.idea
+
+paperBackground.jpg
+/.idea/deployment.xml
+/.idea/vcs.xml
+/.idea/modules.xml
+/.idea/Lernzettel.iml
+/.idea/webServers.xml
+/.idea/workspace.xml
