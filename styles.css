@@ -1,7 +1,31 @@
 html {
-  background: url(img/paperBackgroundReworked.jpg) no-repeat center center fixed; 
+  background: url(img/paperBackgroundReworked.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.results{
+  margin-left: 1.6em;
+  margin-top: 1em
+}
+
+/* style for language buttons */
+#lang_en {
+    width: 36px;
+    height: 24px;
+    background-image: url("res/uk.gif");
+    background-repeat: no-repeat;
+		margin-top: 2px;
+		margin-right: 12px;
+}
+
+#lang_de {
+    width: 36px;
+    height: 24px;
+    background-image: url("res/germany.gif");
+    background-repeat: no-repeat;
+		margin-top: 2px;
+    margin-right: 2px;
 }

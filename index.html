@@ -6,7 +6,7 @@
         <title>BasicStatistics</title>
 
         <!-- MathJax -->
-        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="libs/MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
         <!-- Jquery -->
         <script src="libs/jquery/jquery-3.1.1.min.js"></script>
         <!-- Tether -->
@@ -18,8 +18,6 @@
         <!-- Sweet Alert 2 -->
         <script src="libs/sweetAlert/sweetAlert.min.js"></script>
         <link rel="stylesheet" href="libs/sweetAlert/sweetAlert.min.css" />
-        <!-- Font Awesome -->
-        <script src="libs/fontAwesome/fontAwesome.js"></script>
         <!-- Sticky Headers -->
         <script src="libs/stickyHeaders/stickyHeaders.min.js"></script>
         <!-- Datepicker -->
@@ -33,8 +31,11 @@
         <script src="script.js"></script>
       </head>
     <body>
-      <h1 style="text-align: center; text-decoration: underline; color: #ffaf00">Statistics</h1>
-      <h3 style="margin-left: 0.5em">Enter your data below:</h3>
+      <button id="lang_en" style="float: right;"> </button>
+      <button id="lang_de" style="float: right;"> </button>
+      <h1 style="text-align: center; text-decoration: underline; color: #ffaf00">Statistics - Calculator</h1>
+
+      <h3 style="margin-left: 0.5em" title="Press enter after every value, in order to create a new cell.">Enter your data below:</h3>
       <ul id="data-input">
         <li style="display:inline">
           <input type="text" class="data_handler" id="_1" style="display: inline" />
@@ -42,10 +43,14 @@
       </ul>
       <div class="menu">
         <button type="button" style="margin-left: 17px" class="btn btn-outline-success btn-lg" id="calc">Calculate</button>
-        <button type="button" class="btn btn-danger btn-sm">Delete All</button>
+        <button type="button" class="btn btn-danger btn-sm" id="delete">Delete All</button>
+        <button type="button" class="btn btn-warning btn-sm" id="deleteL">Delete Last</button>
       </div>
       <div class="results" id="results">
-        <span id="meanValue">Mean Value: NaN</span>
+        <span id="meanValue">Mean Value: \(\overline{x} = \frac{1}{n} \ \sum_{i=1}^n x_i =  \) NaN</span><br /><br />
+        <span id="variance">Variance: \( \sigma^2 = \frac{1}{n-1} \sum_{i=1}^n (x_i - \overline{x})^2 =\) NaN</span><br /><br />
+        <span id="standardDeviation">Standard Deviation: \(\sigma = \sqrt{\sigma^2} = \) NaN</span><br /><br />
+        <span id="sM">Error of Mean: \(s_{\overline{x}} = \frac{\sigma}{\sqrt{n}} =\) NaN</span>
       </div>
 
 
