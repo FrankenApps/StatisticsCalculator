@@ -6,6 +6,16 @@ $(document).ready(function() {
   });
   refreshListener();
 
+  // load selected language
+  if(localStorage.getItem("lang") != null){
+    if(localStorage.getItem("lang") == "de"){
+      lang_de();
+    }
+    else if (localStorage.getItem("lang") == "en") {
+      lang_en();
+    }
+  }
+
   //detect focus-change and test all textboxes.. I hope it wont take too long with many boxes..
   $(document).focusout(function(event) {
     for (var i = 1; i < current_id; i++) {
@@ -24,10 +34,12 @@ $(document).ready(function() {
   //languages
   $('#lang_de').on('click', function(event) {
     lang_de();
+    localStorage.setItem("lang", "de");
   });
 
   $('#lang_en').on('click', function(event) {
     lang_en();
+    localStorage.setItem("lang", "en");
   });
 
   $('#delete').on('click', function(event) {
@@ -84,9 +96,11 @@ $(document).ready(function() {
 function refreshListener(){
   $('#_'+String(current_id-1)).on('keypress', function(event) {
     if(event.keyCode === 13){
-      var r = $(`<li style="display: inline; margin-bottom: 34px">
-                  <input type="text" class="data_handler" id="_${current_id}" />
-                  </li>`);
+      var r = $(`<li style="display:inline" class="form-inline">
+        <div class="col-sm-2" style="display:inline">
+          <input type="text" class="data_handler form-control" id="_${current_id}" />
+        </div>
+      </li>`);
       $("#data-input").append(r);
       $('#_'+String(current_id)).focus();
       current_id++;

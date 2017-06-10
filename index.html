@@ -6,7 +6,7 @@
         <title>BasicStatistics</title>
 
         <!-- MathJax -->
-        <script src="libs/MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML-full"></script>
         <!-- Jquery -->
         <script src="libs/jquery/jquery-3.1.1.min.js"></script>
         <!-- Tether -->
@@ -37,8 +37,10 @@
 
       <h3 style="margin-left: 0.5em" title="Press enter after every value, in order to create a new cell.">Enter your data below:</h3>
       <ul id="data-input">
-        <li style="display:inline">
-          <input type="text" class="data_handler" id="_1" style="display: inline" />
+        <li style="display:inline" class="form-inline">
+          <div class="col-sm-2" style="display:inline">
+            <input type="text" class="data_handler form-control" id="_1" />
+          </div>
         </li>
       </ul>
       <div class="menu">
