@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="libs/tether/css/tether.min.css" />
         <!-- Bootstrap 4 -->
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-        <script src="libs/bootstrap/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
         <!-- Sweet Alert 2 -->
         <script src="libs/sweetAlert/sweetAlert.min.js"></script>
         <link rel="stylesheet" href="libs/sweetAlert/sweetAlert.min.css" />
@@ -37,13 +37,11 @@
       <h1 style="text-align: center; text-decoration: underline; color: #ffaf00">Statistics - Calculator</h1>
 
       <h3 style="margin-left: 0.5em" title="Press enter after every value, in order to create a new cell.">Enter your data below:</h3>
-      <ul id="data-input">
-        <li style="display:inline" class="form-inline">
-          <div class="col-sm-2" style="display:inline">
+      <div id="data-input" style="margin-bottom: 1em">
+          <div class="col-sm-2 form-inline" style="display:inline">
             <input type="text" class="data_handler form-control" id="_1" />
           </div>
-        </li>
-      </ul>
+      </div>
       <div class="menu">
         <button type="button" style="margin-left: 17px" class="btn btn-outline-success btn-lg" id="calc">Calculate</button>
         <button type="button" class="btn btn-danger btn-sm" id="delete">Delete All</button>

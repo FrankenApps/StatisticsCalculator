@@ -96,11 +96,9 @@ $(document).ready(function() {
 function refreshListener(){
   $('#_'+String(current_id-1)).on('keypress', function(event) {
     if(event.keyCode === 13){
-      var r = $(`<li style="display:inline" class="form-inline">
-        <div class="col-sm-2" style="display:inline">
+      var r = $(`<div class="col-sm-2 form-inline" style="display:inline">
           <input type="text" class="data_handler form-control" id="_${current_id}" />
-        </div>
-      </li>`);
+        </div>`);
       $("#data-input").append(r);
       $('#_'+String(current_id)).focus();
       current_id++;
